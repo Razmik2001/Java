@@ -1,6 +1,6 @@
 package org.example;
 
-public class HomWork {
+public class HomeWork {
     public static void main(String[] args) {
         //part1
         {
