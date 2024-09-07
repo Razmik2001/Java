@@ -1,7 +1,7 @@
 package org.example.HomeWork.N12;
 
 public class Sort {
-    public  void selection(Integer[] arr) {
+    public void selection(Integer[] arr) {
         int minIndex;
         for (int i = 0; i < arr.length; i++) {
             minIndex = i;
@@ -10,11 +10,21 @@ public class Sort {
                     minIndex = j;
                 }
             }
-            swap(arr,minIndex, i);
+            swap(arr, minIndex, i);
         }
     }
 
-    public  void swap(Integer[] arr, int index1, int index2) {
+    public void bubble(Integer[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr, j, j + 1);
+                }
+            }
+        }
+    }
+
+    public void swap(Integer[] arr, int index1, int index2) {
         if (index1 == index2) {
             return;
         }
