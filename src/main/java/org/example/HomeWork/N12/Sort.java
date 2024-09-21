@@ -24,6 +24,18 @@ public class Sort {
         }
     }
 
+    public void insertion(Integer[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int key = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            arr[j + 1] = key;
+        }
+    }
+
     public void swap(Integer[] arr, int index1, int index2) {
         if (index1 == index2) {
             return;
